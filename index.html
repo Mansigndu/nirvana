@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NIRVANA Realty</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'premium-gold': '#C5A059',
+                        'premium-dark': '#0A1A2F',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 overflow-x-hidden">
+
+    <!-- ================= NAVBAR ================= -->
+
+<div class="nav"></div>
+
+
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section
+        class="relative min-h-[100svh] flex items-center justify-center overflow-hidden">
+
+        <!-- BACKGROUND IMAGE -->
+        <div
+            class="absolute inset-0 bg-[url('images/card1.jpg')] bg-cover bg-center">
+        </div>
+
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-black/60"></div>
+
+        <!-- CONTENT -->
+        <div
+            class="relative z-10 max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 text-center pt-28 pb-16">
+
+            <!-- TAG -->
+            <div
+                class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-5 py-2 rounded-full mb-6">
+
+                <span
+                    class="w-2 h-2 rounded-full bg-premium-gold animate-pulse">
+                </span>
+
+                <p
+                    class="text-white text-[11px] sm:text-sm tracking-[0.2em] uppercase">
+                    Commercial Gala Available For Sale / Rent
+                </p>
+
+            </div>
+
+            <!-- TITLE -->
+            <h1
+                class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+
+                Premium Commercial <br>
+
+                <span class="text-premium-gold">
+                    Spaces In Naigaon
+                </span>
+
+            </h1>
+
+            <!-- TEXT -->
+            <p
+                class="text-white/80 mt-6 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+
+                Premium commercial destination for
+                retail, office, showroom &
+                investment opportunities.
+
+            </p>
+
+            <!-- BUTTONS -->
+            <div
+                class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+
+                <a href="properties.html"
+                    class="bg-premium-gold text-black px-8 py-4 rounded-full font-semibold hover:scale-105 transition duration-300 shadow-2xl text-center">
+
+                    Explore Properties
+
+                </a>
+
+                <a href="contact.html"
+                    class="border border-white/30 text-white px-8 py-4 rounded-full font-medium hover:bg-white hover:text-black transition duration-300 text-center">
+
+                    Schedule Visit
+
+                </a>
+
+            </div>
+
+            <!-- FEATURES -->
+            <div
+                class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-14 max-w-5xl mx-auto">
+
+                <div
+                    class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-4 hover:bg-white/15 transition duration-300">
+
+                    <i class="fas fa-store text-premium-gold text-2xl"></i>
+
+                    <p class="text-white font-semibold mt-3 text-sm sm:text-base">
+                        Commercial Gala
+                    </p>
+
+                </div>
+
+                <div
+                    class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-4 hover:bg-white/15 transition duration-300">
+
+                    <i class="fas fa-location-dot text-premium-gold text-2xl"></i>
+
+                    <p class="text-white font-semibold mt-3 text-sm sm:text-base">
+                        Prime Location
+                    </p>
+
+                </div>
+
+                <div
+                    class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-4 hover:bg-white/15 transition duration-300">
+
+                    <i class="fas fa-building text-premium-gold text-2xl"></i>
+
+                    <p class="text-white font-semibold mt-3 text-sm sm:text-base">
+                        Office / Retail
+                    </p>
+
+                </div>
+
+                <div
+                    class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-4 hover:bg-white/15 transition duration-300">
+
+                    <i class="fas fa-chart-line text-premium-gold text-2xl"></i>
+
+                    <p class="text-white font-semibold mt-3 text-sm sm:text-base">
+                        Investment Potential
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT PREVIEW ================= -->
+
+    <section class="py-24 bg-white">
+
+        <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+            <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+                <div>
+
+                    <p
+                        class="uppercase tracking-[0.3em] text-premium-gold text-sm mb-5">
+                        About Property
+                    </p>
+
+                    <h2
+                        class="text-4xl md:text-5xl font-bold text-premium-dark leading-tight">
+                        Commercial Spaces Designed For Growth
+                    </h2>
+
+                    <p
+                        class="text-gray-500 mt-8 text-lg leading-relaxed">
+
+                        Discover premium commercial gala spaces crafted for
+                        retail businesses, office setups, and long-term
+                        investment opportunities.
+
+                    </p>
+
+                    <p
+                        class="text-gray-500 mt-5 text-lg leading-relaxed">
+
+                        Modern infrastructure, premium surroundings,
+                        and strategic location make this property ideal
+                        for growing businesses.
+
+                    </p>
+
+                    <a href="about.html"
+                        class="inline-block mt-10 bg-premium-dark text-white px-8 py-4 rounded-full hover:bg-premium-gold hover:text-black transition duration-300">
+                        Learn More
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <img src="images/card2.jpg"
+                        class="rounded-3xl shadow-2xl w-full h-[500px] object-cover">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROPERTY HIGHLIGHTS ================= -->
+
+    <section class="py-24 bg-gray-50">
+
+        <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16">
+
+                <p
+                    class="uppercase tracking-[0.3em] text-premium-gold text-sm mb-5">
+                    Property Highlights
+                </p>
+
+                <h2
+                    class="text-4xl md:text-5xl font-bold text-premium-dark">
+                    Why Choose This Space?
+                </h2>
+
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition duration-300">
+
+                    <i class="fas fa-map-location-dot text-premium-gold text-4xl"></i>
+
+                    <h3 class="text-2xl font-semibold mt-6 text-premium-dark">
+                        Prime Location
+                    </h3>
+
+                    <p class="text-gray-500 mt-4 leading-relaxed">
+                        Excellent visibility and connectivity in a fast-growing area.
+                    </p>
+
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition duration-300">
+
+                    <i class="fas fa-store text-premium-gold text-4xl"></i>
+
+                    <h3 class="text-2xl font-semibold mt-6 text-premium-dark">
+                        Retail Ready
+                    </h3>
+
+                    <p class="text-gray-500 mt-4 leading-relaxed">
+                        Ideal for shops, offices, showrooms, and commercial businesses.
+                    </p>
+
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition duration-300">
+
+                    <i class="fas fa-chart-line text-premium-gold text-4xl"></i>
+
+                    <h3 class="text-2xl font-semibold mt-6 text-premium-dark">
+                        Investment Growth
+                    </h3>
+
+                    <p class="text-gray-500 mt-4 leading-relaxed">
+                        High future appreciation potential in developing infrastructure zones.
+                    </p>
+
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition duration-300">
+
+                    <i class="fas fa-building text-premium-gold text-4xl"></i>
+
+                    <h3 class="text-2xl font-semibold mt-6 text-premium-dark">
+                        Premium Design
+                    </h3>
+
+                    <p class="text-gray-500 mt-4 leading-relaxed">
+                        Elegant commercial architecture with modern surroundings.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= GALLERY PREVIEW ================= -->
+
+    <section class="py-24 bg-white">
+
+        <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-5 mb-14">
+
+                <div>
+
+                    <p
+                        class="uppercase tracking-[0.3em] text-premium-gold text-sm mb-4">
+                        Gallery
+                    </p>
+
+                    <h2
+                        class="text-4xl md:text-5xl font-bold text-premium-dark">
+                        Property Showcase
+                    </h2>
+
+                </div>
+
+                <a href="gallery.html"
+                    class="bg-premium-dark text-white px-7 py-3 rounded-full hover:bg-premium-gold hover:text-black transition duration-300">
+                    View Gallery
+                </a>
+
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <img src="images/card1.jpg"
+                    class="rounded-3xl h-[350px] w-full object-cover hover:scale-[1.02] transition duration-300 shadow-xl">
+
+                <img src="images/card2.jpg"
+                    class="rounded-3xl h-[350px] w-full object-cover hover:scale-[1.02] transition duration-300 shadow-xl">
+
+                <img src="images/card3.jpg"
+                    class="rounded-3xl h-[350px] w-full object-cover hover:scale-[1.02] transition duration-300 shadow-xl">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CTA SECTION ================= -->
+
+    <section class="py-24 bg-premium-dark relative overflow-hidden">
+
+        <div class="max-w-5xl mx-auto px-5 sm:px-6 lg:px-8 text-center relative z-10">
+
+            <p
+                class="uppercase tracking-[0.3em] text-premium-gold text-sm mb-5">
+                Book A Visit
+            </p>
+
+            <h2
+                class="text-4xl md:text-5xl font-bold text-white leading-tight">
+                Let’s Explore Your
+                Perfect Commercial Space
+            </h2>
+
+            <p
+                class="text-white/70 text-lg mt-6 leading-relaxed max-w-3xl mx-auto">
+
+                Connect with us to schedule a property visit and discover
+                premium commercial opportunities.
+
+            </p>
+
+            <a href="contact.html"
+                class="inline-block mt-10 bg-premium-gold text-black px-8 py-4 rounded-full font-semibold hover:scale-105 transition duration-300">
+                Contact Now
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <div class="footer"></div>
+    <script src="./footer.js"></script>
+
+   <script src="./nav.js"></script>
+
+</body>
+
+</html>

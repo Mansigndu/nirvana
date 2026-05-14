@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | NIRVANA Realty</title>
+
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- TAILWIND CONFIG -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'premium-gold': '#C5A059',
+                        'premium-dark': '#0A1A2F',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- GOOGLE FONT -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        body{
+            font-family:'Inter',sans-serif;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        .gallery-card{
+            transition:0.4s;
+        }
+
+        .gallery-card:hover{
+            transform:translateY(-8px);
+        }
+
+        .gallery-card img{
+            transition:0.5s;
+        }
+
+        .gallery-card:hover img{
+            transform:scale(1.06);
+        }
+
+        .mobile-link{
+            display:flex;
+            align-items:center;
+            gap:14px;
+            padding:16px 18px;
+            border-radius:18px;
+            color:#374151;
+            font-weight:500;
+            font-size:17px;
+            transition:0.3s;
+        }
+
+        .mobile-link:hover{
+            background:#0A1A2F;
+            color:white;
+        }
+
+        @media(max-width:480px){
+
+            #mobile-menu{
+                width:88%;
+            }
+
+            .mobile-link{
+                padding:15px 16px;
+                font-size:16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body class="bg-white text-gray-800 overflow-x-hidden">
+
+<div class="nav"></div>
+
+<!-- ================= HERO ================= -->
+
+<section
+    class="relative h-[65vh] md:h-[75vh] flex items-center justify-center text-center overflow-hidden">
+
+    <!-- BG -->
+    <img src="images/card1.jpg"
+        class="absolute inset-0 w-full h-full object-cover">
+
+    <!-- OVERLAY -->
+    <div class="absolute inset-0 bg-black/65"></div>
+
+    <!-- CONTENT -->
+    <div class="relative z-10 px-6">
+
+        <p
+            class="uppercase tracking-[0.35em] text-premium-gold text-xs md:text-sm mb-5">
+            Luxury Gallery
+        </p>
+
+        <h1
+            class="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight">
+            Explore Premium <br>
+            Commercial Spaces
+        </h1>
+
+        <p
+            class="text-white/80 mt-6 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
+            Discover elegant commercial properties crafted for
+            premium business experiences and long-term investment value.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section class="py-20 md:py-28 bg-white">
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+        <!-- HEADING -->
+        <div class="text-center mb-14">
+
+            <p
+                class="uppercase tracking-[0.3em] text-premium-gold text-sm mb-4">
+                Property Showcase
+            </p>
+
+            <h2
+                class="text-3xl md:text-5xl font-bold text-premium-dark">
+                Our Premium Gallery
+            </h2>
+
+            <p
+                class="text-gray-500 mt-5 max-w-2xl mx-auto leading-relaxed">
+                A curated showcase of luxurious commercial spaces,
+                modern architecture, and investment-ready environments.
+            </p>
+
+        </div>
+
+        <!-- GRID -->
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+            <!-- CARD -->
+            <div
+                class="gallery-card rounded-3xl overflow-hidden shadow-lg bg-white">
+
+                <div class="overflow-hidden">
+
+                    <img src="images/card1.jpg"
+                        class="w-full h-[260px] object-cover">
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3
+                        class="text-2xl font-semibold text-premium-dark">
+                        Premium Exterior
+                    </h3>
+
+                    <p
+                        class="text-gray-500 mt-3 leading-relaxed">
+                        Elegant commercial frontage with luxurious
+                        architectural appeal.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CARD -->
+            <div
+                class="gallery-card rounded-3xl overflow-hidden shadow-lg bg-white">
+
+                <div class="overflow-hidden">
+
+                    <img src="images/card2.jpg"
+                        class="w-full h-[260px] object-cover">
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3
+                        class="text-2xl font-semibold text-premium-dark">
+                        Modern Interiors
+                    </h3>
+
+                    <p
+                        class="text-gray-500 mt-3 leading-relaxed">
+                        Spacious layouts designed for premium business
+                        environments.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CARD -->
+            <div
+                class="gallery-card rounded-3xl overflow-hidden shadow-lg bg-white">
+
+                <div class="overflow-hidden">
+
+                    <img src="images/card3.jpg"
+                        class="w-full h-[260px] object-cover">
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3
+                        class="text-2xl font-semibold text-premium-dark">
+                        Strategic Location
+                    </h3>
+
+                    <p
+                        class="text-gray-500 mt-3 leading-relaxed">
+                        Prime connectivity with growing infrastructure
+                        and premium surroundings.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CARD -->
+            <div
+                class="gallery-card rounded-3xl overflow-hidden shadow-lg bg-white">
+
+                <div class="overflow-hidden">
+
+                    <img src="images/card4.jpg"
+                        class="w-full h-[260px] object-cover">
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3
+                        class="text-2xl font-semibold text-premium-dark">
+                        Office Spaces
+                    </h3>
+
+                    <p
+                        class="text-gray-500 mt-3 leading-relaxed">
+                        Modern office-ready spaces with elegant
+                        premium finishes.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CARD -->
+            <div
+                class="gallery-card rounded-3xl overflow-hidden shadow-lg bg-white">
+
+                <div class="overflow-hidden">
+
+                    <img src="images/card5.jpg"
+                        class="w-full h-[260px] object-cover">
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3
+                        class="text-2xl font-semibold text-premium-dark">
+                        Luxury Experience
+                    </h3>
+
+                    <p
+                        class="text-gray-500 mt-3 leading-relaxed">
+                        Designed to create a luxurious and lasting
+                        business impression.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CARD -->
+            <div
+                class="gallery-card rounded-3xl overflow-hidden shadow-lg bg-white">
+
+                <div class="overflow-hidden">
+
+                    <img src="images/card6.jpeg"
+                        class="w-full h-[260px] object-cover">
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3
+                        class="text-2xl font-semibold text-premium-dark">
+                        Investment Potential
+                    </h3>
+
+                    <p
+                        class="text-gray-500 mt-3 leading-relaxed">
+                        High-growth commercial opportunities in premium
+                        Mumbai corridors.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section
+    class="py-20 bg-premium-dark text-center text-white px-6">
+
+    <p
+        class="uppercase tracking-[0.3em] text-premium-gold text-sm mb-4">
+        Book Your Visit
+    </p>
+
+    <h2
+        class="text-3xl md:text-5xl font-bold leading-tight">
+        Experience Premium <br>
+        Commercial Realty
+    </h2>
+
+    <p
+        class="text-white/70 mt-6 max-w-2xl mx-auto leading-relaxed">
+        Schedule your private property visit today and discover
+        premium commercial investment opportunities.
+    </p>
+
+    <a href="contact.html"
+        class="inline-block mt-8 bg-premium-gold text-black px-8 py-4 rounded-full font-semibold hover:scale-105 transition">
+
+        Schedule Visit
+
+    </a>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<div class="footer"></div>
+
+
+<script src="./nav.js"></script>
+<script src="./footer.js"></script>
+
+</body>
+</html>

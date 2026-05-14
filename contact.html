@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | NIRVANA Realty</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'premium-gold': '#C5A059',
+                        'premium-dark': '#0A1A2F',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gold-text {
+            background: linear-gradient(135deg, #E6C27A 0%, #B38F40 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, #C5A059 0%, #A27D3E 100%);
+            transition: 0.3s ease;
+        }
+
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(197, 160, 89, 0.35);
+        }
+
+        .input-style {
+            width: 100%;
+            padding: 14px 18px;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+            outline: none;
+            transition: 0.3s ease;
+            background: white;
+        }
+
+        .input-style:focus {
+            border-color: #C5A059;
+            box-shadow: 0 0 0 4px rgba(197, 160, 89, 0.12);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .mobile-menu-show {
+            display: flex !important;
+        }
+    </style>
+
+</head>
+
+<body class="bg-white text-gray-800">
+
+<div class="nav"></div>
+
+    <!-- ================= HERO ================= -->
+
+    <section
+        class="relative min-h-[70vh] flex items-center justify-center bg-[url('./images/contact.jpeg')] bg-cover bg-center">
+        <div class="absolute inset-0 bg-black/65"></div>
+
+        <div
+            class="relative z-10 text-center px-5 max-w-4xl mx-auto pt-24">
+
+            <p
+                class="uppercase tracking-[0.3em] text-premium-gold text-sm mb-5">
+                Contact Us
+            </p>
+
+            <h1
+                class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
+                Let's Discuss Your <br>
+                <span class="gold-text">Next Investment</span>
+            </h1>
+
+            <p
+                class="text-white/80 mt-6 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+                Get expert guidance for premium commercial properties and
+                investment opportunities in Mumbai’s fastest-growing locations.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="py-20 md:py-28 bg-gray-50">
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+            <div class="grid lg:grid-cols-2 gap-14 items-start">
+
+                <!-- LEFT -->
+                <div>
+
+                    <p
+                        class="uppercase tracking-[0.3em] text-premium-gold text-sm mb-5">
+                        Get In Touch
+                    </p>
+
+                    <h2
+                        class="text-4xl md:text-5xl font-bold text-premium-dark leading-tight">
+                        We’re Here To Help You
+                    </h2>
+
+                    <p
+                        class="text-gray-500 text-lg leading-relaxed mt-6">
+                        Whether you're looking for a premium commercial space,
+                        retail investment, or expert property consultation —
+                        our team is ready to guide you.
+                    </p>
+
+                    <!-- CONTACT CARDS -->
+                    <div class="space-y-6 mt-10">
+
+                        <div
+                            class="contact-card bg-white p-6 rounded-3xl shadow-md transition duration-300">
+
+                            <div class="flex items-start gap-5">
+
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-premium-dark flex items-center justify-center text-white text-xl">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+
+                                <div>
+                                    <h3
+                                        class="text-xl font-semibold text-premium-dark">
+                                        Phone
+                                    </h3>
+
+                                    <p class="text-gray-500 mt-2">
+                                        +91 98765 43210
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="contact-card bg-white p-6 rounded-3xl shadow-md transition duration-300">
+
+                            <div class="flex items-start gap-5">
+
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-premium-dark flex items-center justify-center text-white text-xl">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+
+                                <div>
+                                    <h3
+                                        class="text-xl font-semibold text-premium-dark">
+                                        Email
+                                    </h3>
+
+                                    <p class="text-gray-500 mt-2 break-all">
+                                        connect@nirvanarealty.com
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="contact-card bg-white p-6 rounded-3xl shadow-md transition duration-300">
+
+                            <div class="flex items-start gap-5">
+
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-premium-dark flex items-center justify-center text-white text-xl">
+                                    <i class="fas fa-location-dot"></i>
+                                </div>
+
+                                <div>
+                                    <h3
+                                        class="text-xl font-semibold text-premium-dark">
+                                        Address
+                                    </h3>
+
+                                    <p class="text-gray-500 mt-2">
+                                        Gala no.1, Jai Vijay Nagdi Apt.,
+                                        Opposite Seven Square School,
+                                        Naigaon East, Mumbai
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT FORM -->
+                <div id="contact-form"
+    class="bg-white rounded-[35px] shadow-2xl p-6 sm:p-8 md:p-10">
+
+    <h3 class="text-3xl font-bold text-premium-dark">
+        Request A Callback
+    </h3>
+
+    <p class="text-gray-500 mt-3">
+        Fill the form and our team will contact you shortly.
+    </p>
+
+    <!-- THANK YOU MESSAGE -->
+    <div id="success-message"
+        class="hidden mt-6 bg-green-100 border border-green-300 text-green-700 px-5 py-4 rounded-2xl text-center font-medium">
+        Thank you! Your inquiry has been submitted successfully.
+    </div>
+
+    <form id="inquiryForm" class="space-y-6 mt-8">
+
+        <!-- NAME -->
+        <div>
+            <input type="text"
+                placeholder="Full Name *"
+                class="input-style"
+                required>
+        </div>
+
+        <!-- EMAIL -->
+        <div>
+            <input type="email"
+                placeholder="Email Address *"
+                class="input-style"
+                required>
+        </div>
+
+        <!-- PHONE -->
+        <div>
+            <input type="tel"
+                placeholder="Phone Number *"
+                class="input-style"
+                required>
+        </div>
+
+        <!-- SELECT -->
+        <div>
+            <select class="input-style" required>
+
+                <option value="">
+                    Select Interest *
+                </option>
+
+                <option>
+                    Commercial Space
+                </option>
+
+                <option>
+                    Office Space
+                </option>
+
+                <option>
+                    Retail Investment
+                </option>
+
+                <option>
+                    Property Consultation
+                </option>
+
+            </select>
+        </div>
+
+        <!-- MESSAGE -->
+        <div>
+            <textarea rows="5"
+                placeholder="Your Message *"
+                class="input-style resize-none"
+                required></textarea>
+        </div>
+
+        <!-- BUTTON -->
+        <button type="submit"
+            class="btn-gold w-full text-white py-4 rounded-2xl font-semibold text-lg hover:scale-[1.02] transition duration-300">
+            Send Inquiry
+        </button>
+
+    </form>
+
+</div>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MAP ================= -->
+
+    <section class="pb-20 bg-gray-50">
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+            <div
+                class="overflow-hidden rounded-[35px] shadow-2xl h-[350px] md:h-[500px]">
+
+                <iframe
+                    src="https://maps.google.com/maps?q=naigaon%20east&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <div class="footer"></div>
+    <script src="./nav.js"></script>
+    <script src="./footer.js"></script>
+    <!-- FORM SCRIPT -->
+<script>
+
+    const form = document.getElementById("inquiryForm");
+    const successMessage = document.getElementById("success-message");
+
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        // SHOW THANK YOU MESSAGE
+        successMessage.classList.remove("hidden");
+
+        // CLEAR FORM
+        form.reset();
+
+        // AUTO HIDE MESSAGE
+        setTimeout(() => {
+
+            successMessage.classList.add("hidden");
+
+        }, 4000);
+
+    });
+
+
+       
+    </script>
+
+</body>
+
+</html>
