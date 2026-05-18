@@ -443,6 +443,95 @@
     <script src="./footer.js"></script>
 
    <script src="./nav.js"></script>
+   
+<!-- ================= POPUP ================= -->
+<div id="projectPopup"
+    onclick="outsideClose(event)"
+    class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center z-[999] px-4">
+
+    <div class="bg-white max-w-2xl w-full rounded-3xl overflow-hidden relative">
+
+        <!-- CLOSE BUTTON -->
+        <button onclick="closePopup()"
+            class="absolute top-4 right-5 text-2xl text-gray-600 hover:text-black">
+            ✕
+        </button>
+
+        <!-- IMAGE -->
+        <img id="popupImage"
+            class="w-full max-h-[500px] object-contain bg-white">
+
+        <!-- CONTENT -->
+        <div class="p-8">
+            <h2 id="popupTitle" class="text-2xl font-bold mb-2"></h2>
+            <p id="popupLocation" class="text-premium-gold font-medium mb-3"></p>
+            <p id="popupDescription" class="text-gray-600 leading-relaxed"></p>
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+
+function openPopup(title, location, description, image) {
+
+    const popup = document.getElementById('projectPopup');
+
+    popup.classList.remove('hidden');
+    popup.classList.add('flex');
+
+    document.getElementById('popupTitle').innerText = title;
+    document.getElementById('popupLocation').innerText = location;
+    document.getElementById('popupDescription').innerText = description;
+    document.getElementById('popupImage').src = image;
+}
+
+function closePopup() {
+
+    const popup = document.getElementById('projectPopup');
+
+    popup.classList.add('hidden');
+    popup.classList.remove('flex');
+}
+
+function outsideClose(event) {
+    if (event.target.id === "projectPopup") {
+        closePopup();
+    }
+}
+
+// ⭐ AUTO OPEN ON PAGE LOAD
+window.addEventListener("load", function () {
+
+    setTimeout(() => {
+        openPopup(
+            "Featured Projects",
+            "Premium Developments",
+            "Explore our top commercial and residential projects built for modern lifestyle and investment growth.",
+            "images/building.jpeg"
+        );
+    }, 800);
+
+});
+
+// ⭐ ESC KEY CLOSE
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+        closePopup();
+    }
+})
+window.addEventListener("scroll", function () {
+    const popup = document.getElementById("projectPopup");
+
+    if (!popup.classList.contains("hidden")) {
+        closePopup();
+    }
+});
+
+</script>
+
+
 
 </body>
 
