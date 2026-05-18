@@ -287,61 +287,299 @@
         </div>
 
     </section>
-    <!-- ================= OUR PROJECTS ================= -->
+    
 
-<section class="py-20 bg-gray-50">
+<!-- ================= OUR PROJECTS ================= -->
+
+<section class="py-24 bg-gray-50">
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- HEADING -->
-        <div class="text-center mb-14">
+        <div class="text-center mb-16">
 
             <p class="uppercase tracking-[0.3em] text-premium-gold text-sm mb-4">
                 Our Projects
             </p>
 
             <h2 class="text-4xl md:text-5xl font-bold text-premium-dark">
-                Trusted Developer Associates
+                Featured Developments
             </h2>
 
-            <p class="text-gray-500 mt-5 max-w-2xl mx-auto leading-relaxed">
-                Delivering premium commercial investment opportunities
-                with trusted real estate developers since 2019.
+            <p class="text-gray-500 mt-5 max-w-3xl mx-auto leading-relaxed text-lg">
+                Discover premium residential and commercial developments
+                crafted for luxury lifestyle, strategic investment,
+                and long-term growth opportunities.
             </p>
 
         </div>
 
-        <!-- PROJECT CARDS -->
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+        <!-- PROJECT GRID -->
+        <div class="grid md:grid-cols-2 gap-10">
 
-            <div class="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-2xl transition duration-300 hover:-translate-y-2">
-                <h3 class="font-semibold text-premium-dark">
-                    Abhinandan Lodha
-                </h3>
+            <!-- PROJECT 1 -->
+            <div onclick="openPopup(
+'Abhinandan Lodha',
+'Naigaon East, Mumbai',
+'A thoughtfully planned township offering premium lifestyle residences, landscaped open spaces, modern amenities, and excellent connectivity for comfortable urban living.',
+'images/building2.jpeg'
+)"
+class="cursor-pointer bg-white rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+
+                <!-- IMAGE -->
+                <div class="overflow-hidden">
+                    <img src="images/building2.jpeg"
+                        alt="Abhinandan Lodha"
+                        class="w-full h-80 object-cover hover:scale-105 transition duration-500">
+                </div>
+
+                <!-- CONTENT -->
+                <div class="p-8">
+
+                    <h3 class="text-3xl font-semibold text-premium-dark">
+                        Abhinandan Lodha
+                    </h3>
+
+                    <p class="text-premium-gold font-medium mt-2">
+                        Naigaon East, Mumbai
+                    </p>
+
+                    <p class="text-gray-500 mt-5 leading-relaxed">
+                        A thoughtfully planned township offering premium
+                        lifestyle residences, landscaped open spaces,
+                        modern amenities, and excellent connectivity
+                        for comfortable urban living.
+                    </p>
+
+                    <!-- FEATURES -->
+                    <div class="mt-7 space-y-4">
+
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot text-premium-gold"></i>
+                            <span class="text-gray-700">
+                                Prime Connectivity
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-building text-premium-gold"></i>
+                            <span class="text-gray-700">
+                                Modern Infrastructure
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-tree text-premium-gold"></i>
+                            <span class="text-gray-700">
+                                Open Green Spaces
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-star text-premium-gold"></i>
+                            <span class="text-gray-700">
+                                Luxury Lifestyle Amenities
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-2xl transition duration-300 hover:-translate-y-2">
-                <h3 class="font-semibold text-premium-dark">
-                    Sunteck
-                </h3>
+            <!-- PROJECT 2 -->
+           <div onclick="openPopup(
+'Sunteck One World',
+'Naigaon, Mumbai',
+'Modern residential development offering premium lifestyle spaces, open surroundings, and seamless urban connectivity.',
+'images/building.jpeg'
+)"
+class="cursor-pointer bg-white rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+
+                <!-- IMAGE -->
+                <div class="overflow-hidden">
+                    <img src="images/building.jpeg"
+                        alt="Sunteck One World"
+                        class="w-full h-80 object-cover hover:scale-105 transition duration-500">
+                </div>
+
+                <!-- CONTENT -->
+                <div class="p-8">
+
+                    <h3 class="text-3xl font-semibold text-premium-dark">
+                        Sunteck One World
+                    </h3>
+
+                    <p class="text-premium-gold font-medium mt-2">
+                        Naigaon, Mumbai
+                    </p>
+
+                    <p class="text-gray-500 mt-5 leading-relaxed">
+                        Premium residential development designed with
+                        spacious layouts, lifestyle amenities,
+                        green surroundings, and seamless access
+                        to major city destinations.
+                    </p>
+
+                    <!-- FEATURES -->
+                    <div class="mt-7 space-y-4">
+
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-city text-premium-gold"></i>
+                            <span class="text-gray-700">
+                                Modern Urban Living
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-dumbbell text-premium-gold"></i>
+                            <span class="text-gray-700">
+                                Lifestyle Amenities
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-road text-premium-gold"></i>
+                            <span class="text-gray-700">
+                                Excellent Connectivity
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-leaf text-premium-gold"></i>
+                            <span class="text-gray-700">
+                                Green Open Spaces
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-2xl transition duration-300 hover:-translate-y-2">
-                <h3 class="font-semibold text-premium-dark">
-                    Navkar
-                </h3>
+            <!-- PROJECT 3 -->
+           
+<div onclick="openPopup(
+'Navkar',
+'Premium Commercial Spaces',
+'Commercial developments crafted for business growth with strategic visibility, modern infrastructure and strong investment potential.',
+'./images/card6.jpeg'
+)"
+class="cursor-pointer bg-white rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-2">
+
+    <!-- IMAGE -->
+    <div class="overflow-hidden">
+        <img src="./images/card6.jpeg"
+            alt="Navkar"
+            class="w-full h-80 object-cover hover:scale-105 transition duration-500">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="p-8">
+
+        <h3 class="text-3xl font-semibold text-premium-dark">
+            Navkar
+        </h3>
+
+        <p class="text-premium-gold font-medium mt-2">
+            Premium Commercial Spaces
+        </p>
+
+        <p class="text-gray-500 mt-5 leading-relaxed">
+            Commercial developments built for business growth,
+            offering strategic locations, premium visibility,
+            and future-focused investment opportunities.
+        </p>
+
+        <!-- FEATURES (POINTS ADDED) -->
+        <div class="mt-7 space-y-4">
+
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-briefcase text-premium-gold"></i>
+                <span class="text-gray-700">
+                    Business Ready Spaces
+                </span>
             </div>
 
-            <div class="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-2xl transition duration-300 hover:-translate-y-2">
-                <h3 class="font-semibold text-premium-dark">
-                    Nakshatra JSB Group
-                </h3>
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-chart-line text-premium-gold"></i>
+                <span class="text-gray-700">
+                    High Investment Potential
+                </span>
             </div>
 
-            <div class="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-2xl transition duration-300 hover:-translate-y-2">
-                <h3 class="font-semibold text-premium-dark">
-                    Season
-                </h3>
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-location-dot text-premium-gold"></i>
+                <span class="text-gray-700">
+                    Prime Strategic Location
+                </span>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-building text-premium-gold"></i>
+                <span class="text-gray-700">
+                    Modern Infrastructure
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+            <!-- PROJECT 4 -->
+            <div onclick="openPopup(
+'Nakshatra JSB Group',
+'Modern Residential Development',
+'Contemporary residential spaces designed for comfort, connectivity, and premium urban lifestyle.',
+'https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1974&auto=format&fit=crop'
+)"
+class="cursor-pointer bg-white rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1974&auto=format&fit=crop"
+                        alt="Nakshatra JSB Group"
+                        class="w-full h-80 object-cover hover:scale-105 transition duration-500">
+                </div>
+
+                <div class="p-8">
+
+                    <h3 class="text-3xl font-semibold text-premium-dark">
+                        Nakshatra JSB Group
+                    </h3>
+
+                    <p class="text-premium-gold font-medium mt-2">
+                        Modern Residential Development
+                    </p>
+
+                    <p class="text-gray-500 mt-5 leading-relaxed">
+                        Thoughtfully designed residential spaces combining
+                        comfort, connectivity, and contemporary architecture
+                        for elevated modern living experiences.
+                    </p>
+
+                    <div class="mt-7 space-y-4">
+
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-house text-premium-gold"></i>
+                            <span class="text-gray-700">
+                                Contemporary Homes
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-star text-premium-gold"></i>
+                            <span class="text-gray-700">
+                                Premium Lifestyle
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
@@ -406,7 +644,82 @@
 <div class="footer"></div>
 <script src="./footer.js"></script>
 <script src="./nav.js"></script>
+<!-- ================= PROJECT POPUP ================= -->
+
+<!-- POPUP START -->
+<div id="projectPopup"
+    class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center z-[999] px-4">
+
+    <!-- 🔴 YE WALA DIV -->
+    <div class="bg-white max-w-2xl w-full rounded-3xl overflow-hidden relative">
+
+        <!-- CLOSE BUTTON -->
+        <button onclick="closePopup()">✕</button>
+
+        <!-- IMAGE -->
+        <img id="popupImage" class="w-full max-h-[500px] object-contain bg-white">
+
+        <!-- CONTENT -->
+        <div class="p-8">
+            <h2 id="popupTitle"></h2>
+            <p id="popupLocation"></p>
+            <p id="popupDescription"></p>
+        </div>
+
+    </div>
+
+</div>
+<!-- POPUP END -->
    
 </body>
+<script>
+
+function openPopup(title, location, description, image) {
+
+    document.getElementById('projectPopup')
+        .classList.remove('hidden');
+
+    document.getElementById('projectPopup')
+        .classList.add('flex');
+
+    document.getElementById('popupTitle')
+        .innerText = title;
+
+    document.getElementById('popupLocation')
+        .innerText = location;
+
+    document.getElementById('popupDescription')
+        .innerText = description;
+
+    document.getElementById('popupImage')
+        .src = image;
+}
+
+function closePopup() {
+
+    document.getElementById('projectPopup')
+        .classList.add('hidden');
+
+    document.getElementById('projectPopup')
+        .classList.remove('flex');
+}
+function outsideClose(event) {
+
+    if (event.target.id === "projectPopup") {
+        closePopup();
+    }
+}
+
+window.addEventListener('scroll', () => {
+
+    const popup = document.getElementById('projectPopup');
+
+    if (!popup.classList.contains('hidden')) {
+        closePopup();
+    }
+
+});
+
+</script>
 
 </html>
