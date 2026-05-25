@@ -32,6 +32,54 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+        <style>
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fadeUp {
+    animation: fadeUp 1s ease forwards;
+}
+
+.animate-slideLeft {
+    animation: slideLeft 1.2s ease forwards;
+}
+
+.animate-slideRight {
+    animation: slideRight 1.2s ease forwards;
+}
+
+</style>
 
     <style>
         body {
@@ -40,6 +88,9 @@
 
         html {
             scroll-behavior: smooth;
+        }
+        body,html{
+            overflow-x: hidden;
         }
     </style>
 </head>
@@ -234,18 +285,21 @@
             </div>
         </a>
 
-        <div class="bg-gray-100 rounded-2xl px-5 py-4 text-center font-medium hover:bg-premium-dark hover:text-white transition duration-300">
-            Sunteck
-        </div>
-
+        <a href="suntech.html" class="block">
+            <div class="bg-gray-100 rounded-2xl px-5 py-4 text-center font-medium hover:bg-premium-dark hover:text-white transition duration-300">
+                Sunteck
+            </div>
+        </a>
+        <a href="Navkar.html" class="block">
         <div class="bg-gray-100 rounded-2xl px-5 py-4 text-center font-medium hover:bg-premium-dark hover:text-white transition duration-300">
             Navkar
-        </div>
-
+        </div></a>
+<a href="Nakshatra.html" class="block">
         <div class="bg-gray-100 rounded-2xl px-5 py-4 text-center font-medium hover:bg-premium-dark hover:text-white transition duration-300">
             Nakshatra JSB Group
         </div>
-
+        </a>
+            <a href="Season.html" class="block">
         <div class="bg-gray-100 rounded-2xl px-5 py-4 text-center font-medium hover:bg-premium-dark hover:text-white transition duration-300">
             Season
         </div>
@@ -273,6 +327,117 @@
         </div>
 
     </section>
+<!-- ================= TEAM SECTION ================= -->
+
+<section class="py-20 sm:py-24 bg-gray-50 overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- HEADING -->
+        <div class="text-center mb-14 sm:mb-16 animate-fadeUp">
+
+            <p class="uppercase tracking-[0.3em] text-premium-gold text-xs sm:text-sm mb-4 sm:mb-5">
+                Leadership Team
+            </p>
+
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-premium-dark leading-tight">
+                Meet The Team
+            </h2>
+
+            <p class="text-gray-500 mt-5 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+                Experienced professionals committed to delivering premium commercial spaces,
+                trusted investment opportunities, and modern real estate solutions.
+            </p>
+
+        </div>
+
+        <!-- TEAM CARDS -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+
+            <!-- OWNER CARD -->
+            <div class="group bg-white rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 animate-slideLeft">
+
+                <!-- IMAGE -->
+                <div class="overflow-hidden relative">
+
+                    <!-- OWNER IMAGE -->
+<img src="images/santosh.jpeg"
+    alt="Santosh Yadav"
+    class="w-full h-[320px] sm:h-[420px] lg:h-[500px] object-top object-cover group-hover:scale-105 transition duration-700">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+                </div>
+
+                <!-- CONTENT -->
+                <div class="p-6 sm:p-8 text-center">
+
+                    <h3 class="text-2xl sm:text-3xl font-bold text-premium-dark">
+                        Santosh Yadav
+                    </h3>
+
+                    <p class="text-premium-gold font-semibold mt-2 text-base sm:text-lg tracking-wide">
+                        Owner
+                    </p>
+
+                    <div class="w-16 h-[2px] bg-premium-gold mx-auto mt-4"></div>
+
+                    <p class="text-gray-500 mt-5 leading-relaxed text-sm sm:text-base">
+                        Leading NIRVANA Realty with a strong vision for premium commercial development,
+                        modern infrastructure, and long-term investment growth opportunities.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- BUSINESS PARTNER CARD -->
+            <div class="group bg-white rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 animate-slideRight">
+
+                <!-- IMAGE -->
+                <div class="overflow-hidden relative">
+
+                    <!-- PARTNER IMAGE -->
+<img src="images/satish.jpeg"
+    alt="Satish Yadav"
+    class="w-full h-[320px] sm:h-[420px] lg:h-[500px] object-top object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+                </div>
+
+                <!-- CONTENT -->
+                <div class="p-6 sm:p-8 text-center">
+
+                    <h3 class="text-2xl sm:text-3xl font-bold text-premium-dark">
+                        Satish Yadav
+                    </h3>
+
+                    <p class="text-premium-gold font-semibold mt-2 text-base sm:text-lg tracking-wide">
+                        Business Partner
+                    </p>
+
+                    <div class="w-16 h-[2px] bg-premium-gold mx-auto mt-4"></div>
+
+                    <p class="text-gray-500 mt-5 leading-relaxed text-sm sm:text-base">
+                        Focused on strategic growth, client relationships, and delivering trusted
+                        real estate solutions with professionalism and commitment.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
 
     <!-- ================= PROPERTY HIGHLIGHTS ================= -->
 
